@@ -5,9 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
     <title>Modelagem BD</title>
-    <script src="scripts/script.js"></script>
+    <script src="scripts/script.js" defer></script>
 </head>
 <body>
-    <p>test</p>
+    <div class="container">
+        <section class="tools-board">
+            <div class="row">
+                <label class="title"> Figuras </label>
+                <ul class="options">
+                    <li class="option">
+                        <img src="assets/square.svg" alt="">
+                        <span>Retângulo</span>
+                    </li>
+                    <li class="option">
+                        <img src="assets/losango.svg" alt="">
+                        <span>Losango</span>
+                    </li>
+                    <li class="option">
+                        <img src="assets/circle.svg" alt="">
+                        <span>Circulo</span>
+                    </li>
+                    <li class="option">
+                        <input type="checkbox" id="fill-color">
+                        <label for="">Cor</label>
+                    </li>
+                </ul>
+            </div>
+            <div class="row">
+                <label class="title"> Opções </label>
+                <ul class="options">
+                    <li class="option active">
+                        <img src="assets/paint-brush.svg" alt="">
+                        <span>Pincel</span>
+                    </li>
+                    <li class="option">
+                        <img src="assets/eraser.svg" alt="">
+                        <span>Borracha</span>
+                    </li>
+                    <li class="option">
+                        <input type="range" id="size-slider">
+                    </li>
+                </ul>
+            </div>
+            <div class="row colors">
+                <label class="title"> Cores </label>
+                <ul class="options">
+                  <li class="option"></li>
+                  <li class="option selected"></li>
+                  <li class="option"></li>
+                  <li class="option"></li>
+                  <li class="option">
+                    <input type="color" id="color-picker" value="#4A98F7">
+                  </li>
+                </ul>
+            </div>
+            <div class="row buttons">
+                <button class="clear-canvas">Limpar Tela</button>
+                <button class="save-img">Salvar Imagem</button>
+            </div>
+        </section>
+        <section class="drawing-board">
+            <!--  Elemento usado para desenhar na página  -->
+            <canvas></canvas>
+        </section>
+    </div>
 </body>
 </html>

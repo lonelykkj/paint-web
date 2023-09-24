@@ -92,23 +92,23 @@ section{
 }
 
 .colors .option:nth-child(1){
-    background: #000;
+    background-color: #000;
 }
 
 .colors .option:nth-child(2){
-    background: red;
+    background-color: red;
 }
 
 .colors .option:nth-child(3){
-    background: greenyellow;
+    background-color: greenyellow;
 }
 
 .colors .option:nth-child(4){
-    background: orange;
+    background-color: orange;
 }
 
 .colors .option:nth-child(5){
-    background: #4A98F7;
+    background-color: #4A98F7;
 }
 
 .colors .option.selected::before{

@@ -1,9 +1,9 @@
 const canvas = document.querySelector("canvas"),
-    toolBtns = document.querySelectorAll(".tool"),
+toolBtns = document.querySelectorAll(".tool"),
 ctx = canvas.getContext("2d");
 
 let isDrawing = false,
-    brushWidth = 5;
+brushWidth = 5;
 
 
 window.addEventListener("load", () => {
@@ -19,7 +19,7 @@ const startDraw = () => {
 
 const drawing = (e) => {
     if (!isDrawing) return;
-    ctx.lineTo(e.offsetX, e.offsetX); //criando linha de acordo com o ponteiro do mouse
+    ctx.lineTo(e.offsetX, e.offsetY); //criando linha de acordo com o ponteiro do mouse
     ctx.stroke(); //linha de desenho com cor
 }
 
